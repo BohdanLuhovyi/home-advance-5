@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.block{
+    width: 700px;
+    height: 250px;
+
+    margin: 150px auto;
+
+    /* background-color: aqua; */
+}
+
+.badblock{
+    width: 100%;
+    height: 40px;
+    font-size: 25px;
+    /* background-color: burlywood; */
+    display: flex;
+    
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.textB{
+    width: 150px;
+    height: 40px;
+    font-size: 25px;
+    /* background-color: aqua; */
+    
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.badwords{
+    width: 550px;
+    height: 40px;
+    font-size: 25px;
+    /* background-color: blueviolet; */
+    color: red;
+    
+    font-family: Arial, Helvetica, sans-serif;
+    border: none;
+}
+
+.enterBad{
+    width: 500px;
+    height: 40px;
+    font-size: 25px;
+    color: black;
+    border-radius: 15px;
+    
+    margin-top: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.enterBad::placeholder{
+    color: grey;
+}
+
+.add{
+    width: 60px;
+    height: 25px;
+
+    border: none;
+    background-color: yellow;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+
+    cursor: grab;
+}
+
+.reset{
+    width: 60px;
+    height: 25px;
+
+    border: none;
+    background-color: red;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+
+    cursor: grab;
+}
+
+.textInput{
+    width: 500px;
+    height: 100px;
+    resize: none;
+    font-size: 15px;
+
+    margin-top: 5px;
+}
+
+.cenzor{
+    width: 100%;
+    height: 50px;
+
+    background-color: green;
+    color: antiquewhite;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: grab;
+}

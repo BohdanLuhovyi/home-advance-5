@@ -1,0 +1,14 @@
+<div class="block">
+    <div class="badblock">
+        <p class="textB">Bad words:</p>
+        <input class="badwords"  [(ngModel)]="badwords">
+    </div>
+
+    <form name="f1" id="f1">
+        <input type="text" class="enterBad" name="enterBad" placeholder="Enter bad..." [(ngModel)]="enterInput"> 
+        <input type="button"  class="add" value="Add"  (click)="addButton()"> 
+        <input type="button" class="reset" value="Reset" (click)="resetButton()">
+        <textarea class="textInput" placeholder="Text here..."  [(ngModel)]="textInput" name="textInput" ></textarea>
+        <input type="button" class="cenzor" value="Cenzor" (click)="cenzorButton()">
+    </form>
+</div>

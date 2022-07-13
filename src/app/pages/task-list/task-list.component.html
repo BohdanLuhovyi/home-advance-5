@@ -1,0 +1,9 @@
+
+<div class="block-input">
+    <p>Plan your day!</p>
+    <p>User: Ivan Ivanov. Count of Task {{ pTaskArr.length }}</p>
+    <input type="text" name="text" id="textInput" [(ngModel)]="taskInput">
+    <button name="add" id="addBtn" (click)="addTask()" [disabled]="!taskInput">Add</button>
+</div>
+
+<app-child [taskArray]="pTaskArr"></app-child>

@@ -1,0 +1,39 @@
+<div class="big-block">
+    <!-- reg-block -->
+    <div class="registration-block">
+        <form name="f1">
+            <p class="login-text font">Login</p>
+            <input type="text" class="input" id="login"   [(ngModel)]="loginInput" name="login">
+
+            <p class="password-text font">Password</p>
+            <input type="password" class="input" id="password"  [(ngModel)]="passwordInput" name="password">
+
+            <p class="email-text font">Email address</p>
+            <input type="email" class="input" id="email" [(ngModel)]="emailInput" name="email">
+
+            <button type="button" id="button-add-user" class="btn-add-user" (click)="addUser()" [disabled]="!emailInput" [hidden]="addButtonHidden">Add user</button>
+            <button type="button" id="button-edit-user" class="btn-edit-user" (click)="editAccept()"  [hidden]="editButtonHidden">Edit user</button>
+        </form>
+    </div>
+
+    <!-- table-block -->
+    <div class="wrapper">
+        <div class="block-info" *ngFor="let name of usersArray; index as i">
+            <p class="info-in">
+                {{i+1}}. {{usersArray[i].newUserlogin}} | | {{usersArray[i].newUseremail}} | | {{usersArray[i].newUserpassword}}
+            </p>
+            <hr>
+            <div class="actions">
+                <button class="editButton" (click)="editBtn(i)">Edit</button>
+                <button class="deleteButton" (click)="deleteBtn(i)" [disabled]="!editButtonHidden">Delete</button>
+            </div>
+        </div>
+
+        <ng-container *ngIf="usersArray.length === 0">
+            <div class="block-empty">
+                Not found users
+            </div>
+        </ng-container>
+        
+    </div>
+</div>

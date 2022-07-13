@@ -1,0 +1,35 @@
+<div class="table-block">
+    <table id="table">
+        <thead>
+            <tr>
+                <td>#</td>
+                <td>Task</td>
+                <td>Check</td>
+                <td>DONE/IN PROGRESS</td>
+                <td>Edit</td>
+                <td>Delete</td>  
+            </tr>
+            <tr  *ngFor="let name of taskArray; index as i">
+                <td> {{ i+1 }} </td>
+                <td> {{ taskArray[i].newTask }} </td>
+                <td> <input type="checkbox" (click)="checkBox(i)"> </td>
+                <td> {{ taskArray[i].doneCheck }} </td>
+                <td>  <button class="editButton" (click)="editBtn(i)" [disabled]="taskArray[i].doneCheck">Edit</button> </td>
+                <td> <button class="deleteButton" (click)="deleteBtn(i)" [disabled]="!taskArray[i].doneCheck">Delete</button> </td> 
+            </tr>
+        </thead>
+        <tbody id="tbody">
+            
+        </tbody>
+    </table>
+    <ng-container *ngIf="taskArray.length === 0">
+        <div class="block-empty">
+            Not found tasks. 
+        </div>
+    </ng-container>
+</div>
+
+<div class="saveBlock">
+    <input type="text" name="save" id="saveInput" [(ngModel)]="saveInput" [hidden]="hiddenInputSave">
+    <button id="saveButton" (click)="saveButton()" [disabled]="!saveInput" [hidden]="hiddenButtonSave">save</button>
+</div>

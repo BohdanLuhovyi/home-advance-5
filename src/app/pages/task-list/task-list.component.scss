@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.block-input{
+    width: 800px;
+    height: 100px;
+    // border: 1px black solid;
+
+    margin: 50px auto;
+}
+
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: x-large;
+}
+
+#textInput{
+    width: 80%;
+    height: 35px;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+
+    margin-top: 10px;
+}
+
+#addBtn{
+    width: 15%;
+    height: 35px;
+    font-size: 25px;
+    cursor: grab;
+
+    background-color: rgb(40, 143, 40);
+    color: white;
+
+    margin-left: 10px;
+}

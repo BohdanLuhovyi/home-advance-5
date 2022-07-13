@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.table-block{
+    height: 100%;
+    width: 800px;
+    margin: 0 auto;
+    // border: 2px red solid;
+}
+
+
+table{
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    border: solid 1px green;
+}
+td{
+    // border: solid 1px red;
+    padding: 5px;
+    width: 2%;
+}
+
+
+// /* button style */
+
+.editButton{
+    background-color: yellow;
+    font-family: Arial, Helvetica, sans-serifs;
+
+    width: 100%;
+}
+
+.deleteButton{
+    background-color: red;
+    font-family: Arial, Helvetica, sans-serifs;
+
+    width: 100%;
+}
+
+.block-empty{
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    font-family: Arial;
+}
+
+.saveBlock{
+    width: 300px;
+    height: 40px;
+
+    margin: 0 auto;
+}
+
+#saveInput{
+    width: 200px;
+    height: 25px;
+    font-size: 20px;
+
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#saveButton{
+    width: 50px;
+    height: 20px;
+    background-color: green;
+    color: white;
+}
